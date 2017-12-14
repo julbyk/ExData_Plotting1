@@ -21,7 +21,7 @@ data <- subset(data_raw,data_raw$Date %in% seldat)
 rm(data_raw)
 
 # open png device
-png(filename = "plot1.png",width=480, height=480)
+png(filename = "plot1.png",width=480, height=480,bg="transparent")
 
 # make the plot
 with(data,hist(Global_active_power,main = "Global Active Power",xlab = "Global Active Power (kilowatts)",ylab = "Frequency",col = "red"))
